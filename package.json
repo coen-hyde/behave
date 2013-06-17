@@ -1,6 +1,6 @@
 {
   "name": "behave",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wraps a function to limit the amount of times it can be called, then calls the a notifier function once that limit has been reached.",
   "main": "index.js",
   "scripts": {
