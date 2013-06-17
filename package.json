@@ -1,0 +1,26 @@
+{
+  "name": "behave",
+  "version": "0.1.0",
+  "description": "Wraps a function to limit the amount of times it can be called, then calls the a notifier function once that limit has been reached.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coen-hyde/behave"
+  },
+  "keywords": [
+    "function",
+    "limit"
+  ],
+  "author": "Coen Hyde",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/coen-hyde/behave/issues"
+  },
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.11.0"
+  }
+}
