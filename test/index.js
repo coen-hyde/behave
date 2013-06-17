@@ -4,15 +4,17 @@ var should = require('should')
 describe('Behave', function() {
   it('should limit the amount of time a function can be called', function() {
     var count = 0
-      , afterCalled = false;
+      , afterCalled = false
+      , i;
     
     var modifiedFn = behave(5, function() {
       count++;
     }, function() {
+      i.should.equal(5);
       afterCalled = true
     });
 
-    for(var i = 0; i < 20; i++) {
+    for(i = 1; i <= 20; i++) {
       modifiedFn();
     }
 
