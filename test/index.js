@@ -21,4 +21,12 @@ describe('Behave', function() {
     count.should.equal(5);
     afterCalled.should.equal(true);
   });
+
+  it('should be able to wrap function without a notifier function', function() {
+    var modifiedFn = behave(5, function() {});
+
+    for(i = 1; i <= 20; i++) {
+      modifiedFn();
+    }
+  });
 })

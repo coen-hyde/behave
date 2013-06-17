@@ -10,7 +10,7 @@ module.exports = function(limit, fn, afterFn) {
     count++
     fn();
 
-    if (count === limit) {
+    if (count === limit && afterFn) {
       // Limit was reached for the first time
       afterFn();
     }
