@@ -1,7 +1,7 @@
 Behave
 ======
 
-Behave wraps a function to limit the amount of times it can be called, then calls the a notifier function once that limit has been reached.
+Behave wraps a function to limit the amount of times it can be called, then calls the notifier function once that limit has been reached.
 
 Usage
 -----
